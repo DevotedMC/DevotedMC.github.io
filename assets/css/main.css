@@ -104,8 +104,18 @@ p {
 .page-wrapper {
 	position: relative;
 }
+.video {
+	padding: 5px;
+	width: 640px;
+	margin: auto;
+}
+.promo-video {
+	margin: auto;
+	width: 640px;
+	height: 320px;
+}
 
-.summary, .preamble {
+.preamble {
 	width: 80%;
 	margin: 0 auto;
 }
@@ -114,10 +124,6 @@ p {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.summary {
-	padding-top: 2em;
 }
 
 /* intro block links -- download HTML/CSS */
@@ -275,7 +281,7 @@ div.participation p, div.benefits p {
 }
 
 /* archives navigation */
-.design-archives {
+.subtitle-bar {
 	position: absolute;
 	top: 160px;
 	right: 0;
@@ -296,108 +302,6 @@ div.participation p, div.benefits p {
 	left: auto;
 	right: 0;
 }
-
-.design-archives a, .design-archives a:visited {
-	color: rgba(255, 255, 255, 0.65);
-}
-
-.design-archives a:hover, .design-archives a:focus {
-	color: #fff;
-}
-
-.design-archives .previous a, .design-archives .next a {
-	display: block;
-	overflow: hidden;
-	width: 70px;
-	height: 70px;
-	text-indent: 100%;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.design-archives .viewall a {
-	z-index: 2;
-	width: 100%;
-	min-height: 70px;
-	padding: 12px 0 0 0;
-	text-align: center;
-}
-
-.design-archives a::before {
-	position: absolute;
-	left: 0;
-	width: 70px;
-	height: 70px;
-	text-align: center;
-	text-indent: 0;
-	font-size: 44px;
-	/* icomoon.io defaults */
-	font-family: 'verdemoderna';
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 70px;
-	-webkit-font-smoothing: antialiased;
-}
-
-.design-archives .viewall a:hover, .design-archives .viewall a:focus, .design-archives .viewall a:active,
-	.design-archives a:hover::before, .design-archives a:focus::before, .design-archives a:active::before {
-	background-color: rgba(255, 255, 255, 0.25);
-	box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.design-archives .previous a::before {
-	content: "<";
-}
-
-.design-archives .next a::before {
-	content: ">";
-}
-
-/* busting out the credits block */
-.requirements p:nth-child(5) {
-	padding-bottom: 2em;
-}
-
-.supporting .requirements {
-	float: none;
-	clear: both;
-	width: 100%;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.supporting .requirements a {
-	text-decoration: none;
-}
-
-.supporting .requirements a:hover, .supporting .requirements a:focus {
-	text-decoration: underline;
-}
-
-.supporting .requirements h3 {
-	padding-top: 0;
-}
-
-.requirements p:last-child {
-	width: auto;
-	padding: 1em 12%;
-	margin: 0;
-	color: rgba(255, 255, 255, 0.4);
-	background: #3e5d67;
-	background-repeat: repeat, repeat, repeat, no-repeat;
-	background-size: auto, auto, auto, cover;
-	font-size: 2em;
-	font-style: italic;
-	text-align: center;
-}
-
-.requirements p:last-child a {
-	color: rgba(255, 255, 255, 0.7);
-	font-style: normal;
-}
-
 /* main footer */
 footer {
 	clear: both;
@@ -428,8 +332,19 @@ footer {
 	h2::before {
 		padding: 25px;
 	}
-	.requirements p:last-child {
-		padding: 1em 6%;
+
+	.subtitle-bar {
+		top: 200px;
+		height: 50px;
+		font-size: 1.2em;
+	}
+	.video {
+		width: 320px;
+		margin: auto;
+	}
+	.promo-video {
+		width: 320px;
+		height: 180px;
 	}
 }
 
@@ -452,9 +367,6 @@ footer {
 	h2::before {
 		padding: 0;
 	}
-	.design-archives {
-		top: 180px;
-	}
 }
 
 @media only screen and (max-width: 320px) {
@@ -467,15 +379,11 @@ footer {
 	}
 
 	/* linearizing the design list on small screens */
-	.design-selection li, .zen-resources li {
+	.design-selection li {
 		float: none;
 		width: 100%;
 	}
 
-	/* adjusting footer type, icons */
-	.requirements p:last-child {
-		font-size: 1.4em;
-	}
 	footer {
 		padding: 2em 5%;
 	}
@@ -626,12 +534,6 @@ footer {
 	.intro p:last-child, .supporting p:last-child {
 		margin-bottom: 0;
 	}
-	.requirements p:last-child {
-		padding-bottom: 3em;
-		padding-top: 3em;
-		box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
-	}
-
 	/* sidebar styling */
 	.design-selection, .zen-resources {
 		position: absolute;
@@ -659,50 +561,8 @@ footer {
 		background: none;
 	}
 
-	/* archives navigation */
-	.design-archives {
-		position: absolute;
-		z-index: 2;
-		top: 220px;
-		left: 0;
-		width: 100%;
-		height: 70px;
-	}
-	.design-archives nav {
-		display: block;
-		position: absolute;
-		top: 180px;
-		width: 32%;
-	}
-	.design-archives li {
-		margin: 0;
-	}
-	.design-archives .viewall a, .design-archives a::before {
-		background: rgba(255, 255, 255, 0.1);
-		text-decoration: none;
-	}
-	.design-archives .viewall a:hover, .design-archives a:hover::before {
-		background-color: rgba(255, 255, 255, 0.2);
-	}
-
-	/* resources navigation */
-	.zen-resources {
-		position: absolute;
-		top: 1310px;
-		right: 0;
-		width: 34%;
-		background: transparent;
-	}
-	.zen-resources h3 {
-		display: none;
-	}
-	.zen-resources ul {
-		width: 55.9%;
-		margin: 0 29.4% 0 14.7%;
-	}
-	.zen-resources li {
-		padding: 1.5em 0 1.25em 0;
-		margin: 0;
+	.video {
+		padding-right: 1000px;
 	}
 }
 
@@ -719,70 +579,6 @@ footer {
 	}
 }
 
-/*
-  Okay, look, I feel rather awful about this. But due to source order it
-  seems like the only way to pull off the separated sidebar. Perhaps
-  flexbox is the way forward here, once the syntax settles down a bit.
-*/
-@media only screen and (min-width: 1120px) {
-	.zen-resources {
-		top: 1490px;
-	}
-}
-
-@media only screen and (min-width: 1240px) {
-	.zen-resources {
-		top: 1460px;
-	}
-}
-
-@media only screen and (min-width: 1260px) {
-	.zen-resources {
-		top: 1420px;
-	}
-}
-
-@media only screen and (min-width: 1320px) {
-	.zen-resources {
-		top: 1390px;
-	}
-}
-
-@media only screen and (min-width: 1370px) {
-	.zen-resources {
-		top: 1360px;
-	}
-}
-
-@media only screen and (min-width: 1520px) {
-	.zen-resources {
-		top: 1330px;
-	}
-}
-
-@media only screen and (min-width: 1812px) {
-	.zen-resources {
-		top: 1300px;
-	}
-}
-
-@media only screen and (min-width: 1848px) {
-	.zen-resources {
-		top: 1270px;
-	}
-}
-
-@media only screen and (min-width: 2015px) {
-	.zen-resources {
-		top: 1240px;
-	}
-}
-
-@media only screen and (min-width: 2115px) {
-	.zen-resources {
-		top: 1210px;
-	}
-}
 
 @media only screen and (min-width: 2400px) { /* you're kidding, right? */
 }
@@ -790,15 +586,6 @@ footer {
 /* high-DPI adjustments */
 @media ( min--moz-device-pixel-ratio : 1.5) , ( -o-min-device-pixel-ratio : 3 / 2) , ( -webkit-min-device-pixel-ratio : 1.5) , (
 		min-device-pixel-ratio : 1.5) , ( min-resolution : 1.5dppx) {
-	/*
-        This shouldn't be necessary, but it is. Due to differences in how
-        Chrome calculates gradients and % widths / padding, the archives
-        spill out of the visual container at some screen sizes.
-    */
-	.design-archives nav {
-		right: 3%;
-		width: 29%;
-	}
 }
 
 /* icon fonts */
