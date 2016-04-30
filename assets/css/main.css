@@ -39,7 +39,7 @@ header {
 	height: 230px;
 	padding: 20px 0 70px 0;
 	background: #2364bd; /*35,100, 189*/
-	background-attachment : fixed, fixed, fixed, scroll;
+	background-attachment: fixed, fixed, fixed, scroll;
 	background-size: auto, auto, auto, cover;
 	text-align: center;
 	background-attachment: fixed, fixed, fixed, scroll;
@@ -175,7 +175,7 @@ p {
 
 /* coloured cutoff */
 div.participation, div.benefits {
-	background-color: rgba(35,100, 189, 0.5);
+	background-color: rgba(35, 100, 189, 0.5);
 }
 /* extra padding at the cutoffs */
 div.participation {
@@ -282,31 +282,9 @@ div.participation p, div.benefits p {
 	width: 100%;
 	height: 70px;
 	background: rgba(255, 255, 255, 0.2);
-}
-
-.design-archives h3 {
-	display: none;
-}
-
-.design-archives ul {
-	margin: 0;
-}
-
-.design-archives li {
-	position: absolute;
-	top: 0;
-	padding: 0;
-	margin: 0;
-	border: none;
-	list-style: none;
-}
-
-.design-archives li.viewall {
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 0 71px;
-	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
 }
 
 .previous, .next {
@@ -377,24 +355,6 @@ div.participation p, div.benefits p {
 	content: ">";
 }
 
-/* resources */
-.zen-resources {
-	overflow: hidden;
-	background-color: rgba(138, 188, 159, 0.5);
-	background-image: url(bamboo.png);
-}
-
-.zen-resources li {
-	border-top: solid 1px #a0b9ad;
-	font-style: normal;
-}
-
-.zen-resources li:last-child {
-	float: none;
-	width: auto;
-	border-bottom: solid 1px #a0b9ad;
-}
-
 /* busting out the credits block */
 .requirements p:nth-child(5) {
 	padding-bottom: 2em;
@@ -445,6 +405,7 @@ footer {
 	color: #fff;
 	background: #2364bd;
 	text-align: center;
+	font-size: 1.3em;
 }
 
 /* low-res CSS */
@@ -493,12 +454,6 @@ footer {
 	}
 	.design-archives {
 		top: 180px;
-	}
-	.design-selection li, .zen-resources li {
-		padding: 1em 5%;
-	}
-	footer a {
-		margin: 0 0.5em;
 	}
 }
 
@@ -708,29 +663,15 @@ footer {
 	.design-archives {
 		position: absolute;
 		z-index: 2;
-		top: 0;
+		top: 220px;
 		left: 0;
 		width: 100%;
-		height: 310px;
-		background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(0, 0, 0, 0.2) 66%,
-			rgba(33, 84, 95, 0.3) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)),
-			color-stop(66%, rgba(255, 255, 255, 0)), color-stop(66%, rgba(33, 84, 95, 0.3)), color-stop(100%, rgba(33, 84, 95, 0)));
-		/* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3)
-			66%, rgba(33, 84, 95, 0) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%,
-			rgba(33, 84, 95, 0) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%,
-			rgba(33, 84, 95, 0) 100%); /* IE10+ */
-		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%,
-			rgba(33, 84, 95, 0) 100%); /* W3C */
+		height: 70px;
 	}
 	.design-archives nav {
 		display: block;
 		position: absolute;
-		right: 1%;
-		top: 120px;
+		top: 180px;
 		width: 32%;
 	}
 	.design-archives li {
@@ -849,15 +790,6 @@ footer {
 /* high-DPI adjustments */
 @media ( min--moz-device-pixel-ratio : 1.5) , ( -o-min-device-pixel-ratio : 3 / 2) , ( -webkit-min-device-pixel-ratio : 1.5) , (
 		min-device-pixel-ratio : 1.5) , ( min-resolution : 1.5dppx) {
-	header {
-		background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
-		background-size: 50% auto, auto, auto, cover;
-	}
-	.requirements p:last-child {
-		background-image: url(contours@2x.png), url(gridlines.png), url(noise.png), url(koi.jpg);
-		background-size: 50% auto, auto, auto, cover;
-	}
-
 	/*
         This shouldn't be necessary, but it is. Due to differences in how
         Chrome calculates gradients and % widths / padding, the archives
@@ -877,4 +809,4 @@ footer {
 		url('verdemoderna.ttf') format('truetype'), url('verdemoderna.svg#verdemoderna') format('svg');
 	font-weight: normal;
 	font-style: normal;
-} /* 1000 lines?! */
+}
