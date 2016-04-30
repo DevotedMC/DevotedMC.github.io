@@ -104,11 +104,13 @@ p {
 .page-wrapper {
 	position: relative;
 }
+
 .video {
 	padding: 5px;
 	width: 640px;
 	margin: auto;
 }
+
 .promo-video {
 	margin: auto;
 	width: 640px;
@@ -126,7 +128,6 @@ p {
 	margin-right: auto;
 }
 
-/* intro block links -- download HTML/CSS */
 .intro a, .intro a:visited {
 	position: relative;
 	display: inline-block;
@@ -183,7 +184,7 @@ p {
 div.participation, div.benefits {
 	background-color: rgba(35, 100, 189, 0.5);
 }
-/* extra padding at the cutoffs */
+
 div.participation {
 	padding: 3em 0;
 	margin-top: 3em;
@@ -191,7 +192,6 @@ div.participation {
 
 div.benefits {
 	padding-bottom: 3em;
-	margin-bottom: 3em;
 }
 
 div.participation h3, div.benefits h3 {
@@ -202,7 +202,6 @@ div.participation p, div.benefits p {
 	margin-bottom: 0;
 }
 
-/* sidebar base styles */
 .sidebar {
 	background: #edf4f0;
 }
@@ -227,12 +226,11 @@ div.participation p, div.benefits p {
 	overflow: hidden;
 }
 
-/* shared sidebar styling */
-.design-selection ul, .zen-resources ul {
+.design-selection ul {
 	margin: 0;
 }
 
-.design-selection li, .zen-resources li {
+.design-selection li {
 	float: left;
 	width: 50%;
 	padding: 1.5em 10%;
@@ -256,11 +254,11 @@ div.participation p, div.benefits p {
 		100%); /* W3C */
 }
 
-.design-selection li:nth-child(2n+1), .zen-resources li:nth-child(2n+1) {
+.design-selection li:nth-child(2n+1) {
 	clear: left;
 }
 
-.design-selection .design-name, .zen-resources a, li.viewall a {
+.design-selection .design-name {
 	display: block;
 	margin-bottom: 0.25em;
 	font-family: 'Julius Sans One', sans-serif;
@@ -280,7 +278,6 @@ div.participation p, div.benefits p {
 	font-style: normal;
 }
 
-/* archives navigation */
 .subtitle-bar {
 	position: absolute;
 	top: 160px;
@@ -290,19 +287,9 @@ div.participation p, div.benefits p {
 	background: rgba(255, 255, 255, 0.2);
 	text-align: center;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
-.previous, .next {
-	left: 0;
-	z-index: 3;
-}
-
-.next {
-	left: auto;
-	right: 0;
-}
-/* main footer */
 footer {
 	clear: both;
 	padding: 3em 10%;
@@ -310,42 +297,6 @@ footer {
 	background: #2364bd;
 	text-align: center;
 	font-size: 1.3em;
-}
-
-/* low-res CSS */
-@media only screen and (max-width: 600px) {
-	/* these download links make approximately zero sense
-     on a phone without a user-accessible file system. */
-	.summary p:last-child {
-		display: none;
-	}
-
-	/* type adjustments */
-	h1 {
-		margin-top: 30px;
-		font-size: 2.5em;
-	}
-	h1::before {
-		width: 50px;
-		height: 50px;
-	}
-	h2::before {
-		padding: 25px;
-	}
-
-	.subtitle-bar {
-		top: 200px;
-		height: 50px;
-		font-size: 1.2em;
-	}
-	.video {
-		width: 320px;
-		margin: auto;
-	}
-	.promo-video {
-		width: 320px;
-		height: 180px;
-	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -367,6 +318,19 @@ footer {
 	h2::before {
 		padding: 0;
 	}
+	.subtitle-bar {
+		top: 200px;
+		height: 50px;
+		font-size: 1.2em;
+	}
+	.video {
+		width: 320px;
+		margin: auto;
+	}
+	.promo-video {
+		width: 320px;
+		height: 180px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
@@ -383,18 +347,8 @@ footer {
 		float: none;
 		width: 100%;
 	}
-
 	footer {
 		padding: 2em 5%;
-	}
-	footer a {
-		width: 35px;
-		height: 35px;
-		padding: 35px 0 0 0;
-		margin: 0 0.5em;
-	}
-	footer a::before {
-		font-size: 32px;
 	}
 }
 
@@ -402,27 +356,6 @@ footer {
 @media only screen and (max-width: 1132px) {
 	p, li {
 		font-size: 1.2em;
-	}
-}
-
-@media only screen and (min-width: 500px) and (max-width: 1150px) {
-	.requirements p:last-child {
-		padding-bottom: 2em;
-		padding-top: 2em;
-	}
-
-	/* page footer */
-	footer {
-		padding: 3em 0;
-	}
-	footer a {
-		width: 52px;
-		height: 52px;
-		padding: 52px 0 0 0;
-		margin: 0 2em;
-	}
-	footer a::before {
-		font-size: 48px;
 	}
 }
 
@@ -494,7 +427,7 @@ footer {
 	nav, .supporting {
 		display: inline;
 	}
-	.summary, .preamble, .supporting div, .requirements h3, .requirements p {
+	.summary, .preamble, .supporting div {
 		float: left;
 		clear: left;
 		width: 66%;
@@ -506,10 +439,6 @@ footer {
 	.summary {
 		padding-top: 3.25em;
 	}
-	.requirements h3, .requirements p {
-		margin: 0;
-		padding-bottom: 0;
-	}
 
 	/* coloured cutoff */
 	div.participation, div.benefits {
@@ -519,13 +448,10 @@ footer {
 		margin: 0;
 	}
 	/* extra padding at the cutoffs */
-	div.participation, div.requirements {
+	div.participation {
 		padding-top: 4em;
 	}
 	div.explanation, div.benefits {
-		padding-bottom: 4em;
-	}
-	.requirements p:nth-child(5) {
 		padding-bottom: 4em;
 	}
 	.intro h3, .supporting h3 {
@@ -534,8 +460,7 @@ footer {
 	.intro p:last-child, .supporting p:last-child {
 		margin-bottom: 0;
 	}
-	/* sidebar styling */
-	.design-selection, .zen-resources {
+	.design-selection {
 		position: absolute;
 		top: 360px;
 		right: 0;
@@ -550,7 +475,7 @@ footer {
 		width: auto;
 		padding-left: 0;
 		padding-right: 0;
-		margin: 0 29.4% 0 14.7%; /* 0 10% 0 5% of total width */
+		margin: 0 29.4% 0 14.7%;
 	}
 
 	/* select a design */
@@ -560,25 +485,15 @@ footer {
 	.design-selection li:hover, .design-selection li:focus {
 		background: none;
 	}
-
 	.video {
 		padding-right: 1000px;
 	}
-}
-
-@media only screen and (min-width: 1150px) {
-	/* page footer */
-	footer a {
-		width: 76px;
-		height: 76px;
-		padding: 76px 0 0 0;
-		margin: 0 3em;
-	}
-	footer a::before {
-		font-size: 72px;
+	.subtitle-bar {
+		top: 220px;
+		height: 90px;
+		font-size: 1.5em;
 	}
 }
-
 
 @media only screen and (min-width: 2400px) { /* you're kidding, right? */
 }
