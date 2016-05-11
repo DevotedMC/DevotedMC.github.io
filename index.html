@@ -115,17 +115,16 @@
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>				
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 	<script type="text/javascript">
 	$(document).ready(function() {
 		 $('.autoplay').slick({
 			lazyLoad: 'ondemand',
 			centerMode: true,
-			centerPadding: '60px',
-			slidesToShow: 3,
+			slidesToShow: 1,
 			slidesToScroll: 1,
-			dots: true,
+			fade: true,
 			autoplay: true,
 			autoplaySpeed: 2000
 		});
