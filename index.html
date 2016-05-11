@@ -5,16 +5,38 @@
 <meta charset="utf-8">
 <title>Devoted - One of the new Minecraft servers running 1.9</title>
 
-<link rel="stylesheet" media="screen" href="/assets/css/main.css">
+<link rel="stylesheet" media="screen" href="./assets/css/main.css">
+<!-- slick -->
+<link rel="stylesheet" type="text/css" href="./assets/css/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/css/slick/slick-theme.css"/>
+<!-- end slick -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Midas7g">
 <meta name="description" content="A Civcraft like minecraft server, what would happen if you were thrown into a player made world. An experiment in civilization, politics, and nation building.">
 <meta name="robots" content="all">
 
+<!-- Open Graph -->
+<meta property="og:title" content="Devoted - One of the newest Minecraft servers running 1.9" />
+<meta property="og:description" content="A Civcraft like minecraft server, what would happen if you were thrown into a player made world. An experiment in civilization, politics, and nation building.">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://devotedmc.com" />
+<meta property="og:image" content="http://devotedmc.com/assets/img/devoted_og_logo.gif" /><!--470x246 --> <!--158x158-->
+<meta property="og:image:type" content="image/gif" />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="300" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Devoted - One of the newest Minecraft servers running 1.9" />
+<meta property="twitter:description" content="A Civcraft like minecraft server, what would happen if you were thrown into a player made world. An experiment in civilization, politics, and nation building.">
+<meta name="twitter:creator" content="@eyeofmidas" />
+<meta name="twitter:image:src" content="http://devotedmc.com/assets/img/devoted_twitter_logo.gif" /> <!--600x300-->
+<meta name="twitter:domain" content="http://devotedmc.com/" />
 
 <!--[if lt IE 9]>
 	<script src="script/html5shiv.js"></script>
-	<![endif]-->
+<![endif]-->
 </head>
 
 <body id="devotedmc">
@@ -54,6 +76,18 @@
 				<p>If you join our server, you can start building a civilization. Come join our immersive world and the community that surrounds it. We're a lot like other servers like civilizationcraft, civcraft, and others. We've been described as the Minecraft Eve Online server.</p>
 			</div>
 
+
+			<div class="gallery" id="gallery" role="article">
+				<div class="slider autoplay">
+					<div><img data-lazy="assets/img/screenshots/0XMJEGb.png" /></div>
+					<div><img data-lazy="assets/img/screenshots/1s3UavK.png" /></div>
+					<div><img data-lazy="assets/img/screenshots/2muDuBa.png" /></div>
+					<div><img data-lazy="assets/img/screenshots/2nQXfRb.png" /></div>
+					<div><img data-lazy="assets/img/screenshots/3k7Nx6w.png" /></div>
+					<div><img data-lazy="assets/img/screenshots/cAKpn8A.png" /></div>
+				</div>
+			</div>
+
 			<footer> <p role="contentinfo">Join us now. play.devotedmc.com</p> </footer>
 
 		</div>
@@ -79,5 +113,23 @@
 			</div>
 		</aside>
 	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>				
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		 $('.autoplay').slick({
+			lazyLoad: 'ondemand',
+			centerMode: true,
+			centerPadding: '60px',
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			dots: true,
+			autoplay: true,
+			autoplaySpeed: 2000
+		});
+	});
+	</script>
 </body>
 </html>

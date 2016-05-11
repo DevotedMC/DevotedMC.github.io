@@ -202,6 +202,13 @@ div.participation p, div.benefits p {
 	margin-bottom: 0;
 }
 
+div.gallery {
+	text-align: center;
+}
+div.gallery img {
+	width: 200px;
+}
+
 .sidebar {
 	background: #edf4f0;
 }
