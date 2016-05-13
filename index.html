@@ -197,13 +197,24 @@
 	$(document).ready(function() {
 		 $('.autoplay').slick({
 			lazyLoad: 'ondemand',
-			centerMode: true,
-			slidesToShow: 1,
+			centerMode: false,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			arrows: false,
-			fade: true,
+			fade: false,
 			autoplay: true,
-			autoplaySpeed: 2000
+			autoplaySpeed: 2000,
+			responsive: [
+				{
+				breakpoint: 1132,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					fade: true
+					}
+				}
+			]
 		});
 	});
 	</script>
