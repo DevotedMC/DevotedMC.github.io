@@ -285,6 +285,27 @@ div.gallery img {
 	font-style: normal;
 }
 
+.subpages {
+	color: #2e484c;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+}
+
+.subpages ul {
+	list-style: none;
+}
+
+.subpages li {
+	display: inline;
+	padding: 10px;
+}
+
+.subpage-name {
+	text-transform: uppercase;
+}
+
 .subtitle-bar {
 	position: absolute;
 	top: 160px;
