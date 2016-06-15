@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://devotedmc.com/</loc>
+  <loc>https://devotedmc.com/</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/prisonpearl.html</loc>
+  <loc>https://devotedmc.com/prisonpearl.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/citadel.html</loc>
+  <loc>https://devotedmc.com/citadel.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/jukealert.html</loc>
+  <loc>https://devotedmc.com/jukealert.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/hiddenore.html</loc>
+  <loc>https://devotedmc.com/hiddenore.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/civcraft.html</loc>
+  <loc>https://devotedmc.com/civcraft.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/civex.html</loc>
+  <loc>https://devotedmc.com/civex.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/sovasc.html</loc>
+  <loc>https://devotedmc.com/sovasc.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/civilization.html</loc>
+  <loc>https://devotedmc.com/civilization.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/politics.html</loc>
+  <loc>https://devotedmc.com/politics.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/nations.html</loc>
+  <loc>https://devotedmc.com/nations.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/war.html</loc>
+  <loc>https://devotedmc.com/war.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 <url>
-  <loc>http://devotedmc.com/minecraft.html</loc>
+  <loc>https://devotedmc.com/minecraft.html</loc>
   <lastmod>2016-05-26T03:03:35+00:00</lastmod>
 </url>
 </urlset>
